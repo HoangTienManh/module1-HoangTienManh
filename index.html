@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Case Study Web-JS</title>
+</head>
+<body>
+    <div class="body">
+        <div class="header">
+            <div class="header_1 flex_between">
+                <div class="top_nav">
+                    <ul>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Lịch sử giao dịch</a></li>
+                        <li><a href="">Kiểm tra đơn hàng</a></li>
+                    </ul>
+                </div>
+                <div class="member">
+                    <ul>
+                        <li><a href="">Đăng ký</a href=""></li>
+                            <li><a href="">Đăng nhập</a href=""></li>
+                            </ul>
+                        </div> <!--header_1-->
+                    </div>  
+                    <div class="header_2 flex_between">
+                        <a href=""><img src="./img/logo.png" alt=""></a>
+                        <div class="search">
+                            <div class="cart">
+                                <img src="./img/cart.png" alt="">
+                            </div>
+
+                            <!-- Modal - Cart -->
+                            <div class="modal hidden">
+                                <div class="modal_inner">
+                                    <div class="modal_header flex_between">
+                                        <p>Giỏ hàng</p>
+                                        <i class="fa-solid fa-xmark shutdown"></i>
+                                    </div>
+                                    <div class="modal_body">
+                                        <table>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th colspan="3">Tiêu đề</th>
+                                                <th>Giá</th>
+                                                <th>Số lượng</th>
+                                                <th>Tổng cộng</th>
+                                                <th rowspan="2"><button>Xóa</button></th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td colspan="3">Tâm hồn cao thượng</td>
+                                                <td>120.000</td>
+                                                <td class="quantity">
+                                                  <span></span>
+                                                  <i class="fa-solid fa-caret-down down"></i>
+                                                  <i class="fa-solid fa-caret-up up"></i>
+                                                </td>
+                                                <td>120.000</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="total">
+                                            <span>Tổng cộng : </span>
+                                            <span></span>
+                                    </div>
+                                    <div class="modal_footer flex_between">
+                                        <button>Tiếp tục mua hàng</button>
+                                        <button class="pay_btn">Thanh toán đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div> <!-- end modal -->
+
+                            <div class="search_input">
+                                <input type="text" placeholder="Tìm kiếm sách...">
+                                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="header_3">
+                        <ul>
+                            <li><a href="">Danh mục sách <i class="fa-solid fa-caret-down h3_down_icon"></i></a>
+                        <ul class="sub_menu">
+                            <li><a href="#svn">Văn học việt nam</a>
+                                <ul class="sub_menu2">
+                                    <li><a href="">Tiểu thuyết</a></li>
+                                    <li><a href="">Truyện ngắn</a></li>
+                                    <li><a href="">Truyện cười dân gian</a></li>
+                                    <li><a href="">Thơ - kịch</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#snn">Văn học nước ngoài</a>
+                                <ul class="sub_menu2">
+                                    <li><a href="">Tiểu thuyết</a></li>
+                                    <li><a href="">Truyện ngắn</a></li>
+                                    <li><a href="">Kiếm hiệp</a></li>
+                                    <li><a href="">TRinh thám - kinh dị</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Thiếu nhi</a>
+                                <ul class="sub_menu2">
+                                    <li><a href="">Truyện tranh</a></li>
+                                    <li><a href="">Truyện cổ tích</a></li>
+                                    <li><a href="">Kiếm hiệp</a></li>
+                                    <li><a href="">Thơ - văn suôi</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Thời sự - chính trị</a>
+                                <ul class="sub_menu2">
+                                    <li><a href="">Tư Duy làm giàu</a></li>
+                                    <li><a href="">Đầu tư chứng khoán</a></li>
+                                    <li><a href="">Ngoại tệ</a></li>
+                                    <li><a href="">Tài chính - kế toán</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">Sách bán chạy</a></li>
+                    <li><a href="">Chương trình khuyến mãi</a></li>
+                    <li><a href="">Giảm giá đặc biệt</a></li>
+                </ul>
+            </div>     
+        </div> <!--header-->
+        <div class="slider">
+
+            <div class="prev_div">
+                <i class="fa-solid fa-chevron-left prev"></i>    
+            </div>
+            <div class="next_div">
+                <i class="fa-solid fa-chevron-right next"></i>
+            </div>
+
+            <div class="slider_wrapper">
+                <div class="slider_imgs">
+                    <div class="slider_item">
+                        <img src="./img/slice1.jpg" alt="">
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/slice2.jpg" alt="">
+                    </div>
+                    <div class="slider_item">
+                        <img src="./img/slice3.jpg" alt="">
+                    </div>
+                </div>
+                <!-- <div class="slider_dots"></div> -->
+            </div>    
+        </div> <!--slider-->
+
+        <!-- --- block --- -->
+        <div class="block flex_col_center" id="svn">
+                <div class="block_btn">
+                    <div class="p_left">
+                        <img src="./img/left.jpg" alt="">
+                    </div>
+                    <p>Văn Học Việt Nam</p>
+                    <div class="p_right">
+                        <img src="./img/right.jpg" alt="">
+                    </div>
+                </div>
+            
+            <div class="books flex_between"> <!--books vns 1-->
+                <div class="book">
+                    <img src="./img/svn1.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/svn2.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/svn3.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/svn4.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/svn5.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+            </div> <!-- end books vns 1-->
+            <div class="books flex_between"> <!--books vns 1-->
+                <div class="book">
+                    <img src="./img/svn1.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/svn2.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/svn3.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/svn4.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/svn5.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+            </div> <!-- end books vns 1-->
+        </div> <!--block vns -->
+        <!-- --- block --- -->
+        <div class="block flex_col_center" id="snn">
+                <div class="block_btn">
+                    <div class="p_left">
+                        <img src="./img/left.jpg" alt="">
+                    </div>
+                    <p>Văn Học Nước Ngoài</p>
+                    <div class="p_right">
+                        <img src="./img/right.jpg" alt="">
+                    </div>
+                </div>
+            
+            <div class="books flex_between"> <!--- books snn 1-->
+                <div class="book">
+                    <img src="./img/snn1.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/snn2.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/snn3.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/snn4.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/snn5.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+            </div> <!--end books snn 1-->
+            
+            <div class="books flex_between"> <!--- books snn 1-->
+                <div class="book">
+                    <img src="./img/snn1.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/snn2.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/snn3.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/snn4.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+                <div class="book">
+                    <img src="./img/snn5.jpg" alt="">
+                    <div class="book_modal flex_col_center"> <!--book_modal-->
+                        <div class="bm_header">
+                            <p>Tên sách</p>
+                        </div>
+                        <div class="bm_body">
+                            <p>Tác giả:</p>
+                            <p>Số trang:</p>
+                            <p>Giá: VND</p>
+                            <button>Mua sách</button>
+                        </div>
+                    </div> <!--book_modal-->
+                </div>
+            </div> <!--end books snn 1-->
+        </div> <!--block-->
+        
+        <!-- --- footer --- -->
+        <div class="footer flex_col_center">
+            <div class="footer_contact flex_between">
+                <div class="contact left">
+                    <ul>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Chính sách vận chuyển</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                        <li><a href="">Hình thức thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="contact right">
+                    <ul>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Chính sách vận chuyển</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                        <li><a href="">Hình thức thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <a href=""><img src="./img/fb.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer_infor">
+                <p>© 2014 - Bản quyền của Công Ty Cổ Phần Văn Hoá và Truyền Thông Nhã Nam - nhanam.com.vn<br>
+                    Địa chỉ: 59 Đỗ Quang, phường Trung Hoà, quận Cầu Giấy, Hà Nội<br>
+                    Giấy ĐKKD số 0101603420 do Sở KH&ĐT TP Hà Nội cấp ngày 21 tháng 1 năm 2005 sửa đổi lần 5 ngày 20/3/2013</p>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script> 
+</body>
+</html>  
